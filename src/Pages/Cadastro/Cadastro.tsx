@@ -60,7 +60,7 @@ function Cadastro() {
         if (confirmaSenha === usuario.senha && usuario.senha.length >= 8) {
             try {
                 if(usuario.foto == "" || usuario.foto == null){
-                    usuario.foto = "{ LogoPerry }"
+                    usuario.foto =  LogoPerry 
                 }
                 await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuarioResposta);
                 alert('Usuário cadastrado com sucesso');
