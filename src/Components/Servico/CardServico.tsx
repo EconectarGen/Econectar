@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Servico from '../../Models/Servico'
 import './CardServico.css'; // Importa o CSS personalizado
 import ModalSabermais from '../../Components/Servico/ModalSabermais';
+import LogoPerry from '../../assets/PerryEconectar.png';
 
 interface CardServicoProps {
   serv: Servico
@@ -11,7 +12,7 @@ function CardServico({ serv }: CardServicoProps) {
   return (
     <div className='card-servico'>
        <div className="flex w-full gap-4 justify-end">
-          <img src='../../assets/PerryEconectar' alt='Ícone Perry' className='h-10 w-10' />
+          <img src={ LogoPerry } alt='Ícone Perry' className='h-10 w-10' />
         </div>
       <div className='card-servico-content flex flex-col'>
         <h4 className='text-lg font-semibold uppercase'>{serv.nomeServico}</h4>

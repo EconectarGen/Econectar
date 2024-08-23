@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Categoria from '../../Models/Categoria'
+import LogoPerry from '../../assets/PerryEconectar.png';
 
 interface CardCategoriaProps {
   categoria: Categoria
@@ -8,6 +9,9 @@ interface CardCategoriaProps {
 function CardCategorias({ categoria }: CardCategoriaProps) {
   return (
     <div className='border-2 border-blue-500 border-solid flex flex-col rounded-2xl overflow-hidden justify-between'>
+      <div className="flex w-full gap-4 justify-end">
+          <img src={ LogoPerry } alt='Ícone Perry' className='h-10 w-10' />
+        </div>
       <header className='py-2 px-6 bg-white text-dark font-bold text-2xl text-center uppercase'>
         <p>{categoria.nomeCategoria}</p>
       </header>
