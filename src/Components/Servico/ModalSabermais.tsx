@@ -2,7 +2,7 @@ import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';
 import Servico from '../../Models/Servico';
 
-import './ModalServico.css';
+// import './ModalServico.css';
 
 interface ModalSabermaisProps {
   serv: Servico;
