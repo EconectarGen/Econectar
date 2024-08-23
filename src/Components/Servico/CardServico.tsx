@@ -11,7 +11,7 @@ function CardServico({ serv }: CardServicoProps) {
   return (
     <div className='card-servico'>
        <div className="flex w-full gap-4 justify-end">
-          <img src='/src/assets/PerryEconectar.png' alt='Ícone Perry' className='h-10 w-10' />
+          <img src='../../assets/PerryEconectar' alt='Ícone Perry' className='h-10 w-10' />
         </div>
       <div className='card-servico-content flex flex-col'>
         <h4 className='text-lg font-semibold uppercase'>{serv.nomeServico}</h4>
