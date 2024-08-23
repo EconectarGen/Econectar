@@ -17,7 +17,7 @@ function CardServico({ serv }: CardServicoProps) {
       <div className='card-servico-content flex flex-col'>
         <h4 className='text-lg font-semibold uppercase'>{serv.nomeServico}</h4>
         <p>{serv.descricao}</p>
-        <p>Categoria: {serv.Categoria?.nomeCategoria}</p>
+        {/* <p>Categoria: {serv.Categoria?.nomeCategoria}</p> */}
         <p className='font-bold'>Valor: {serv.valor.toFixed(2)}</p>
         <div className='mt-auto text-center'>
           <p><ModalSabermais serv={serv}/></p>

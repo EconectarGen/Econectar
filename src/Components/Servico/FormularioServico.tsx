@@ -239,7 +239,7 @@ function FormularioServico() {
           </select>
         </div>
         <button type="submit" className="rounded disabled:bg-slate-200 bg-indigo-400 hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto block py-2">
-          {carregandoCategoria ? <span>Enviar</span> : id !== undefined ? 'Editar' : 'Cadastrar'}
+          {carregandoCategoria ? <span className='text-white'>Enviar</span> : id !== undefined ? 'Editar' : 'Cadastrar'}
         </button>
       </form>
     </div>
